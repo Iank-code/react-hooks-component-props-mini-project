@@ -21,6 +21,13 @@ function App() {
       <Header name={name}/>
       <About about={about} image={image}/>
       {story}
+
+      {/* This also works */}
+      {/* {posts.map(story => {
+        const {id} = story
+
+        return <ArticleList key={id} post={story}/>
+      })} */}
     </div>
   );
 }
